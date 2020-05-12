@@ -1,0 +1,151 @@
+
+(rules PCB relay-interface
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 16247)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1300:400_um"
+    (shape
+      (circle F.Cu 1300.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1300.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_1300:400_um" "Via[0-1]_1300:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1300:400_um-kicad_default" "Via[0-1]_1300:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-FREEWHEEL" "Via[0-1]_800:400_um" FREEWHEEL
+  )
+  (via 
+    "Via[0-1]_1300:400_um-FREEWHEEL" "Via[0-1]_1300:400_um" FREEWHEEL
+  )
+  (via 
+    "Via[0-1]_800:400_um-PWR_GND" "Via[0-1]_800:400_um" "PWR_GND"
+  )
+  (via 
+    "Via[0-1]_1300:400_um-PWR_GND" "Via[0-1]_1300:400_um" "PWR_GND"
+  )
+  (via 
+    "Via[0-1]_800:400_um-RELAY_OUTPUT" "Via[0-1]_800:400_um" "RELAY_OUTPUT"
+  )
+  (via 
+    "Via[0-1]_1300:400_um-RELAY_OUTPUT" "Via[0-1]_1300:400_um" "RELAY_OUTPUT"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    FREEWHEEL "Via[0-1]_800:400_um-FREEWHEEL"
+  )
+  (via_rule
+    "PWR_GND" "Via[0-1]_1300:400_um-PWR_GND"
+  )
+  (via_rule
+    "RELAY_OUTPUT" "Via[0-1]_1300:400_um-RELAY_OUTPUT"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(D1-Pad2)" "Net-(D2-Pad1)" "Net-(D2-Pad2)" "Net-(Q1-Pad1)" "/MCU_INPUT"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class FREEWHEEL
+    "/COIL_N"
+    (clearance_class FREEWHEEL)
+    (via_rule FREEWHEEL)
+    (rule
+      (width 750.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "PWR_GND"
+    GND +3V3
+    (clearance_class "PWR_GND")
+    (via_rule PWR_GND)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "RELAY_OUTPUT"
+    "/CH1_COM" "/CH1_NC" "/CH1_NO" "/CH2_NO" "/CH2_NC" "/CH2_COM"
+    (clearance_class "RELAY_OUTPUT")
+    (via_rule RELAY_OUTPUT)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

@@ -1,0 +1,147 @@
+Cmp-Mod V01 Created by PcbNew   date = Mon 08 Oct 2018 07:58:01 PM HKT
+
+BeginCmp
+TimeStamp = 5BCA1F8E
+Path = /5BBCEEE1
+Reference = TP3;
+ValeurCmp = TestPoint;
+IdModule  = TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BCA1F82
+Path = /5BBCC8B9
+Reference = TP1;
+ValeurCmp = TestPoint;
+IdModule  = TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BCA1F76
+Path = /5BBCDC51
+Reference = TP2;
+ValeurCmp = TestPoint;
+IdModule  = TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BCB1B73
+Path = /5BBB4891
+Reference = J2;
+ValeurCmp = Conn_01x03;
+IdModule  = footprint-lib.pretty:KF141V141R_Straight_1x08_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9F865
+Path = /5BBB8777
+Reference = R1;
+ValeurCmp = 511;
+IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A175
+Path = /5BBC633D
+Reference = C1;
+ValeurCmp = 106;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A186
+Path = /5BBC9842
+Reference = C2;
+ValeurCmp = 106;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A197
+Path = /5BBCA3D9
+Reference = C3;
+ValeurCmp = 106;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A1AA
+Path = /5BBB87D3
+Reference = D1;
+ValeurCmp = 3V3_STATUS;
+IdModule  = LED_SMD:LED_0805_2012Metric_Castellated;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A1BD
+Path = /5BBB29F7
+Reference = D2;
+ValeurCmp = RELAY_STATUS;
+IdModule  = LED_SMD:LED_0805_2012Metric_Castellated;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9E26B
+Path = /5BBB4C0C
+Reference = D3;
+ValeurCmp = 1N4148;
+IdModule  = Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9D439
+Path = /5BBB7094
+Reference = J1;
+ValeurCmp = MCU_INPUT;
+IdModule  = Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A22F
+Path = /5BBB2AC4
+Reference = JP1;
+ValeurCmp = Jumper;
+IdModule  = Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A24B
+Path = /5BBB44B8
+Reference = K1;
+ValeurCmp = IM00;
+IdModule  = Package_DIP:DIP-8_W7.62mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A261
+Path = /5BBB272C
+Reference = Q1;
+ValeurCmp = PZT2222A;
+IdModule  = Package_TO_SOT_SMD:SOT-223;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A283
+Path = /5BBB455B
+Reference = R2;
+ValeurCmp = 102;
+IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A294
+Path = /5BBB2962
+Reference = R3;
+ValeurCmp = 102;
+IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5BC9A2A5
+Path = /5BBB45E0
+Reference = R4;
+ValeurCmp = 103;
+IdModule  = Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
+
+EndListe
